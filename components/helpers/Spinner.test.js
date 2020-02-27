@@ -1,11 +1,12 @@
-// import React from 'react';
-// import Spinner from './Spinner';
-// import renderer from 'react-test-renderer';
-//
-// test('Spinner renders correctly', () => {
-//     const component = renderer.create(
-//         <Spinner />,
-//     );
-//     let tree = component.toJSON();
-//     expect(tree).toMatchSnapshot();
-// });
+import React from 'react';
+import Enzyme, { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import Adapter from 'enzyme-adapter-react-16';
+import Spinner from "./Spinner";
+
+Enzyme.configure({ adapter: new Adapter() });
+
+it('renders correctly error', () => {
+    const err = shallow(<Spinner />);
+    expect(toJson(err)).toMatchSnapshot();
+});

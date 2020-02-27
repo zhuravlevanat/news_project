@@ -28,14 +28,6 @@ const useStyles = makeStyles(theme => ({
         marginRight: '25px',
 
     },
-
-    link: {
-        marginLeft: 'auto',
-        paddingRight: '20px',
-        fontStyle: 'italic',
-        color: 'black',
-    }
-
 }));
 
 const useStyles2 = makeStyles(theme => ({
@@ -51,22 +43,17 @@ const NewsPost = ({item}) => {
     const {author, title, description, publishedAt, urlToImage, url } = item;
     const classes = useStyles();
     const classes2 = useStyles2();
-    const addDefaultSrc = (ev) => {
-        console.log('broken');
-    }
-    console.log(urlToImage);
-     return (
+    return (
           <Card className={classes.root}>
                 <CardHeader
                     classes={{subheader: classes.subheader}}
                     title={title}
                     subheader={`${author} ${parsePublishedAt(publishedAt)}`}
-
                 />
                 {urlToImage && <CardMedia
                     className={classes.media}
                     image={`${urlToImage}`}
-                    title={title} onError={addDefaultSrc}
+                    title={title}
                 />}
                 <CardContent className={classes2.root}>
                     {description}
@@ -76,9 +63,8 @@ const NewsPost = ({item}) => {
                         Main source here...
                     </Link>
                 </CardActions>
-
-                  </Card>
+          </Card>
     )
-}
+};
 
 export default NewsPost;

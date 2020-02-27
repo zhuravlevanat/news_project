@@ -1,9 +1,8 @@
-import Layout from "../../components/LayoutModule/Layout";
 import {changeLoadingState, loadNews} from "../../redux/News/actions";
 import { addCurrentCategory } from "../../redux/Categories/actions";
 import { connect } from 'react-redux'
 import React from "react";
-import NewsPage from "../../components/NewsPageModule/NewsPage";
+import NewsPage from "../../components/NewsPageModule";
 
 const PageWithNews = () => (
      <NewsPage/>

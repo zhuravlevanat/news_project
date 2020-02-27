@@ -5,9 +5,19 @@
   "license": "MIT",
   "dependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.8.3",
+    "@babel/preset-flow": "^7.8.3",
+    "@babel/runtime": "^7.8.4",
     "@material-ui/core": "^4.9.4",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.9.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.2.2",
     "next-redux-saga": "^4.1.2",
@@ -29,11 +39,12 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.8.4",
-    "@babel/preset-react": "^7.8.3",
-    "babel-jest": "^25.1.0",
-    "enzyme": "^3.11.0",
-    "jest": "^25.1.0",
-    "react-test-renderer": "^16.13.0"
+    "@babel/core": "^7.4.0",
+    "babel-jest": "^24.5.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "jest": "^24.5.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^16.8.4"
   }
 }

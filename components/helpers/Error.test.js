@@ -1,11 +1,13 @@
 import React from 'react';
 import Error from './Error';
-import renderer from 'react-test-renderer';
+import Enzyme, { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import Adapter from 'enzyme-adapter-react-16';
 
-test('Error renders correctly', () => {
-    const component = renderer.create(
-        <Error />,
-    );
-    let tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+Enzyme.configure({ adapter: new Adapter() });
+
+it('renders correctly error', () => {
+    const err = shallow(<Error />);
+    expect(toJson(err)).toMatchSnapshot();
 });
+

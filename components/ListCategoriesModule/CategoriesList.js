@@ -1,17 +1,7 @@
-import {connect} from "react-redux";
-import NewsLink from "../NewsPageModule/NewsLink";
-import { getCategories } from "../../redux/Categories/selector";
+import NewsLink from "../helpers/NewsLink";
 import React, {Fragment} from "react";
 import List from '@material-ui/core/List';
-import {getLoadingState} from "../../redux/News/selectors";
 import Spinner from "../helpers/Spinner";
-
-const mapStateToProps = (state) => {
-    return {
-        categories: getCategories(state),
-        loading: getLoadingState(state),
-    }
-}
 
 const CategoriesList = ({categories, loading}) => {
     return (
@@ -24,9 +14,8 @@ const CategoriesList = ({categories, loading}) => {
                     </List>
                 )
             }
-
         </Fragment>
     )
 };
 
-export default connect(mapStateToProps)(CategoriesList);
+export default CategoriesList;

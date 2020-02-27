@@ -1,5 +1,4 @@
 import {Box} from "@material-ui/core";
-// import LinearProgress from "@material-ui/core/LinearProgress";
 import React from "react";
 import {ThemeProvider} from "@material-ui/core/styles";
 import theme from "../theme";
