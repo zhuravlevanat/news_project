@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoriesList CategoriesList initial renders properly 1`] = `ShallowWrapper {}`;
+
+exports[`CategoriesList CategoriesList loading renders properly 1`] = `ShallowWrapper {}`;
+
+exports[`CategoriesList News list initial renders properly 1`] = `ShallowWrapper {}`;
+
+exports[`CategoriesList NewsList with loading renders properly 1`] = `ShallowWrapper {}`;

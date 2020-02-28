@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner Spinner box renders without crashing 1`] = `
+<Styled(MuiBox)
+  display="flex"
+  flexDirection="column"
+  height="100vh"
+  justifyContent="center"
+  pb={25}
+>
+  <WithStyles(ForwardRef(LinearProgress))
+    color="primary"
+  />
+  <WithStyles(ForwardRef(LinearProgress))
+    color="primary"
+  />
+</Styled(MuiBox)>
+`;

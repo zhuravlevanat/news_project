@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryForm initial render renders properly 1`] = `ShallowWrapper {}`;
+
+exports[`CategoryForm renders properly 1`] = `ShallowWrapper {}`;

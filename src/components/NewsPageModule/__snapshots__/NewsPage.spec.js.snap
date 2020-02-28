@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsPage News page initial renders properly 1`] = `ShallowWrapper {}`;
+
+exports[`NewsPage News page with error renders properly 1`] = `ShallowWrapper {}`;

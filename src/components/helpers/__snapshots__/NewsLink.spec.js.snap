@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsLink NewsLink wrapper renders without crashing 1`] = `
+<WithStyles(ForwardRef(ListItem))>
+  <Link
+    href="/news?category=sport"
+  >
+    <WithStyles(ForwardRef(Link))
+      className="makeStyles-root-1"
+    >
+      sport
+    </WithStyles(ForwardRef(Link))>
+  </Link>
+</WithStyles(ForwardRef(ListItem))>
+`;
